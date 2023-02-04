@@ -5,6 +5,16 @@ import { Heading } from './Heading'
 export default {
 	title: 'Heading',
 	component: Heading,
+	argTypes: {
+		level: {
+			options: [1, 2],
+			control: { type: 'select' },
+		},
+		align: {
+			options: ['left', 'center', 'right'],
+			control: { type: 'select' },
+		},
+	},
 } as ComponentMeta<typeof Heading>
 
 const Template: ComponentStory<typeof Heading> = args => (

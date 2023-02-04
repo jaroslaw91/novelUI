@@ -6,6 +6,12 @@ import { Loader } from './Loader'
 export default {
 	title: 'Loader',
 	component: Loader,
+	argTypes: {
+		type: {
+			options: ['button', 'website'],
+			control: { type: 'select' },
+		},
+	},
 } as ComponentMeta<typeof Loader>
 
 const Template: ComponentStory<typeof Loader> = args => <Loader {...args} />

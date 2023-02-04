@@ -5,6 +5,20 @@ import { Paragraph } from './Paragraph'
 export default {
 	title: 'Paragraph',
 	component: Paragraph,
+	argTypes: {
+		type: {
+			options: ['default', 'label', 'error'],
+			control: { type: 'select' },
+		},
+		size: {
+			options: ['small', 'medium', 'big', 'large', 'huge'],
+			control: { type: 'select' },
+		},
+		align: {
+			options: ['left', 'center', 'right'],
+			control: { type: 'select' },
+		},
+	},
 } as ComponentMeta<typeof Paragraph>
 
 const Template: ComponentStory<typeof Paragraph> = args => (

@@ -6,6 +6,18 @@ export default {
 	title: 'Button',
 	component: Button,
 	argTypes: {
+		variant: {
+			options: ['primary', 'secondary', 'alert'],
+			control: { type: 'select' },
+		},
+		align: {
+			options: ['left', 'center'],
+			control: { type: 'select' },
+		},
+		type: {
+			options: ['button', 'submit', 'reset'],
+			control: { type: 'select' },
+		},
 		action: { action: 'clicked' },
 	},
 } as ComponentMeta<typeof Button>

@@ -6,7 +6,14 @@ export default {
 	title: 'Spacer',
 	component: Spacer,
 	argTypes: {
-		action: { action: 'clicked' },
+		space: {
+			options: ['mini', 'tiny', 'small', 'medium', 'big', 'large', 'huge'],
+			control: { type: 'select' },
+		},
+		type: {
+			options: ['horizontal', 'vertical'],
+			control: { type: 'select' },
+		},
 	},
 } as ComponentMeta<typeof Spacer>
 
