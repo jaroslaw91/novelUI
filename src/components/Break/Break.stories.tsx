@@ -10,3 +10,6 @@ export default {
 const Template: ComponentStory<typeof Break> = args => <Break {...args} />
 
 export const Default = Template.bind({})
+Default.args = {
+	'data-testid': 'break',
+}
