@@ -1,5 +1,4 @@
-import { describe, it, render, waitFor } from 'utils/tests-utils'
-
+import { describe, it, render, waitFor } from '../../utils/tests-utils'
 import { Heading } from './Heading'
 
 describe('components/Heading', () => {
