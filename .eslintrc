@@ -1,0 +1,35 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"airbnb",
+		"airbnb-typescript",
+		"airbnb/hooks",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended"
+	],
+	"overrides": [],
+	"ignorePatterns": ["vite.config.ts"],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"project": ["tsconfig.json"],
+		"sourceType": "module",
+		"parser": "@typescript-eslint/parser"
+	},
+	"plugins": ["react", "@typescript-eslint", "prettier"],
+	"rules": {
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+		"react/react-in-jsx-scope": "off",
+		"react/function-component-definition": "off",
+		"import/prefer-default-export": "off",
+		"react/require-default-props": "off",
+		"no-unused-vars": "error",
+		"@typescript-eslint/no-unused-vars": "error",
+		"react/jsx-props-no-spreading": "off",
+		"@typescript-eslint/no-unused-expressions": "off"
+	}
+}
