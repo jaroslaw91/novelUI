@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-types */
 import { render as rtlRender, screen, waitFor } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { ComponentType, PropsWithChildren, ReactElement } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { describe, it, vi } from 'vitest'
@@ -17,4 +16,4 @@ const render = (ui: ReactElement) => {
 
 export * from '@testing-library/react'
 
-export { render, describe, it, vi, screen, waitFor, userEvent }
+export { render, describe, it, vi, screen, waitFor }
