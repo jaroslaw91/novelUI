@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react'
 
 import { ChildrenComponent, LayoutComponent, PresentionalComponent } from './Layout.styles'
 
-interface LayoutProps {
+export interface LayoutProps {
 	children: ReactNode
 	image?: string
 	'data-testid'?: string
