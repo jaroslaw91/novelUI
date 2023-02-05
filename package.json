@@ -9,6 +9,9 @@
 	"publishConfig": {
 		"@jaroslaw91:registry": "https://npm.pkg.github.com"
 	},
+	"respository": {
+		"url": "git://github.com/jaroslaw91/novelUI.git"
+	},
 	"files": [
 		"/dist"
 	],

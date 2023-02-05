@@ -2,7 +2,7 @@ name: novelUI
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
@@ -31,4 +31,4 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NOVELUI}}
+          NODE_AUTH_TOKEN: ${{secrets.NOVEL_UI}}
