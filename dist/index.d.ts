@@ -6,4 +6,5 @@ export * from './components/Layout';
 export * from './components/Loader';
 export * from './components/Paragraph';
 export * from './components/Spacer';
+export * from './components/Theme';
 //# sourceMappingURL=index.d.ts.map
