@@ -1,7 +1,7 @@
 import { addons } from '@storybook/addons'
 
 import novelUI from './novelUI'
-import favicon from './public/icon.png'
+import favicon from './static/icon.png'
 
 addons.setConfig({
 	theme: novelUI,
