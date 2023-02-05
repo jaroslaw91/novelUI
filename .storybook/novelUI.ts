@@ -1,6 +1,6 @@
 import { create } from '@storybook/theming'
 
-import brandImage from './static/nui.svg'
+import brandImage from './static/logo.svg'
 
 export default create({
 	base: 'dark',
