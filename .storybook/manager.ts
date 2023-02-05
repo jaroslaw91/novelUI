@@ -1,7 +1,7 @@
 import { addons } from '@storybook/addons'
 
-import simpleUI from './simpleUI'
+import novelUI from './novelUI'
 
 addons.setConfig({
-	theme: simpleUI,
+	theme: novelUI,
 })

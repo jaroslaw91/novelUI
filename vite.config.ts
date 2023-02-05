@@ -19,9 +19,9 @@ export default defineConfig({
 	build: {
 		lib: {
 			entry: resolve('src', 'index.ts'),
-			name: 'SimpleUI',
+			name: 'novelUI',
 			formats: ['es', 'umd'],
-			fileName: format => `simple-ui.${format}.js`,
+			fileName: format => `novel-ui.${format}.js`,
 		},
 		rollupOptions: {
 			external: [...Object.keys(packageJson.peerDependencies)],

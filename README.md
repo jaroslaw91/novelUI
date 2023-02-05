@@ -1,6 +1,6 @@
 <div align='center'>
 
-# SimpleUI
+# novelUI
 
 <img src='./coverage/badges/badge-statements.svg' />
 <img src='./coverage/badges/badge-branches.svg' />
