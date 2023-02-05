@@ -40,12 +40,7 @@ export default defineConfig({
 				'src/constants/**/*.{ts,tsx}',
 				'src/utils/**/*.{ts,tsx}',
 			],
-			exclude: [
-				'src/**/index.{ts,tsx}',
-				'src/**/*.test.{ts,tsx}',
-				'src/**/*.stories.{ts,tsx}',
-				'src/components/StorybookWrapper/**',
-			],
+			exclude: ['src/**/index.{ts,tsx}', 'src/**/*.test.{ts,tsx}', 'src/**/*.stories.{ts,tsx}'],
 			reporter: ['json-summary', 'text', 'html'],
 		},
 	},

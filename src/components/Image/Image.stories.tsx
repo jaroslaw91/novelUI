@@ -9,7 +9,7 @@ export default {
 	argTypes: {
 		variant: {
 			options: ['default', 'avatar'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 		onClick: { action: 'clicked' },
 	},

@@ -8,11 +8,11 @@ export default {
 	argTypes: {
 		level: {
 			options: [1, 2],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 		align: {
 			options: ['left', 'center', 'right'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 	},
 } as ComponentMeta<typeof Heading>

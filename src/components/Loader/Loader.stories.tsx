@@ -8,7 +8,7 @@ export default {
 	argTypes: {
 		type: {
 			options: ['button', 'website'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 	},
 } as ComponentMeta<typeof Loader>

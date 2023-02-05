@@ -8,11 +8,11 @@ export default {
 	argTypes: {
 		space: {
 			options: ['mini', 'tiny', 'small', 'medium', 'big', 'large', 'huge'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 		type: {
 			options: ['horizontal', 'vertical'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 	},
 } as ComponentMeta<typeof Spacer>

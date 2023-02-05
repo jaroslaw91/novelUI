@@ -1,7 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
-import { StorybookWrapper } from '../src/components/StorybookWrapper'
 import { GlobalStyles } from '../src/styles/GlobalStyles'
 import { darkTheme, lightTheme } from '../src/styles/theme'
 
@@ -13,9 +12,7 @@ const withTheme = (StoryFn, context) => {
 		<ThemeProvider theme={storyTheme}>
 			<GlobalStyles />
 
-			<StorybookWrapper>
-				<StoryFn />
-			</StorybookWrapper>
+			<StoryFn />
 		</ThemeProvider>
 	)
 }

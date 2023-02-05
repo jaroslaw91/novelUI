@@ -8,15 +8,15 @@ export default {
 	argTypes: {
 		variant: {
 			options: ['primary', 'secondary', 'alert'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 		align: {
 			options: ['left', 'center'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 		type: {
 			options: ['button', 'submit', 'reset'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 		action: { action: 'clicked' },
 	},

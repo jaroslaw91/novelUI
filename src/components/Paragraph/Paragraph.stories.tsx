@@ -8,15 +8,15 @@ export default {
 	argTypes: {
 		type: {
 			options: ['default', 'label', 'error'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 		size: {
 			options: ['small', 'medium', 'big', 'large', 'huge'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 		align: {
 			options: ['left', 'center', 'right'],
-			control: { type: 'select' },
+			control: { type: 'radio' },
 		},
 	},
 } as ComponentMeta<typeof Paragraph>
