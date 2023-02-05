@@ -5,7 +5,9 @@
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
 		"allowJs": false,
 		"skipLibCheck": true,
-		"esModuleInterop": false,
+		"esModuleInterop": true,
+		"declaration": true,
+		"declarationMap": true,
 		"allowSyntheticDefaultImports": true,
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
@@ -14,7 +16,12 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+		"baseUrl": "./",
+		"paths": {
+			"simple-ui": ["src/index.ts"]
+		},
+		"typeRoots": ["node_modules/@types", "src/index.d.ts"]
 	},
 	"include": ["src"],
 	"references": [{ "path": "./tsconfig.node.json" }]
