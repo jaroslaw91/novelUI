@@ -1,6 +1,6 @@
 import 'styled-components'
 
-import { darkTheme, lightTheme } from 'styles/theme'
+import { darkTheme, lightTheme } from './theme'
 
 declare module 'styled-components' {
 	type LightTheme = typeof lightTheme

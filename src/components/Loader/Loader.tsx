@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import { LoaderButtonComponent, LoaderComponent } from './Loader.styles'
 
-interface LoaderProps {
+export interface LoaderProps {
 	type?: 'button' | 'website'
 	'data-testid'?: string
 }

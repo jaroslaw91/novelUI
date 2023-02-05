@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react'
 
 import { HeadingComponent } from './Heading.styles'
 
-interface HeadingProps {
+export interface HeadingProps {
 	level?: 1 | 2
 	children: ReactNode
 	align?: 'left' | 'center' | 'right'

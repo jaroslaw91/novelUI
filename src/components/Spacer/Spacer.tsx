@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import { SpacerComponent } from './Spacer.styles'
 
-interface SpacerProps {
+export interface SpacerProps {
 	type?: 'horizontal' | 'vertical'
 	space?: 'mini' | 'tiny' | 'small' | 'medium' | 'big' | 'large' | 'huge'
 	'data-testid'?: string

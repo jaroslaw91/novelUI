@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react'
 
 import { HeadingComponent } from './Paragraph.styles'
 
-interface ParagraphProps {
+export interface ParagraphProps {
 	type?: 'default' | 'label' | 'error'
 	children: ReactNode
 	size?: 'small' | 'medium' | 'big' | 'large' | 'huge'
