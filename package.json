@@ -7,8 +7,6 @@
 	"module": "dist/novelui.es.js",
 	"types": "dist/index.d.ts",
 	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org/",
 		"@jaroslaw91:registry": "https://npm.pkg.github.com"
 	},
 	"files": [
