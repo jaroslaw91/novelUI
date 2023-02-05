@@ -19,7 +19,7 @@
 		"jsx": "react-jsx",
 		"baseUrl": "./",
 		"paths": {
-			"novel-ui": ["src/index.ts"]
+			"novelui": ["src/index.ts"]
 		},
 		"typeRoots": ["node_modules/@types", "src/index.d.ts"]
 	},

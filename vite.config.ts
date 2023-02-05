@@ -21,7 +21,7 @@ export default defineConfig({
 			entry: resolve('src', 'index.ts'),
 			name: 'novelUI',
 			formats: ['es', 'umd'],
-			fileName: format => `novel-ui.${format}.js`,
+			fileName: format => `novelui.${format}.js`,
 		},
 		rollupOptions: {
 			external: [...Object.keys(packageJson.peerDependencies)],
