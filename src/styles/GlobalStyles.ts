@@ -3,6 +3,26 @@ import { createGlobalStyle, css } from 'styled-components'
 export const GlobalStyles = createGlobalStyle`
 	${({ theme: { font, colors } }) =>
 		css`
+		@font-face {
+			font-family: Poppins;
+			src: url('../assets/fonts/PoppinsRegular.woff2') format('woff2'),
+				url('../assets/fonts/PoppinsRegular.woff') format('woff');
+			font-weight: 400;
+		}
+	
+		@font-face {
+			font-family: Roboto;
+			src: url('../assets/fonts/PoppinsMedium.woff2') format('woff2'),
+				url('../assets/fonts/PoppinsMedium.woff') format('woff');
+			font-weight: 500;
+		}
+	
+		@font-face {
+			font-family: Roboto;
+			src: url('../assets/fonts/PoppinsSemiBold.woff2') format('woff2'),
+				url('../assets/fonts/PoppinsSemiBold.woff') format('woff');
+			font-weight: 600;
+		}
 	
 		:root {
 			font-family: 'Poppins', sans-serif;

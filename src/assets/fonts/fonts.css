@@ -1,0 +1,17 @@
+@font-face {
+	font-family: Poppins;
+	src: url('./PoppinsRegular.woff2') format('woff2'), url('./PoppinsRegular.woff') format('woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url('./PoppinsMedium.woff2') format('woff2'), url('./PoppinsMedium.woff') format('woff');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url('./PoppinsSemiBold.woff2') format('woff2'), url('./PoppinsSemiBold.woff') format('woff');
+	font-weight: 600;
+}
