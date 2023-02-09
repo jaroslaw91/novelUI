@@ -24,7 +24,7 @@
 		"format": "prettier --write ./src",
 		"storybook": "storybook dev -p ./static .storybook watch-css ./src 6006",
 		"build-storybook": "storybook build",
-		"release": "yarn version --patch && pnpm test:badges && pnpm build"
+		"release": "yarn version --patch && pnpm badges && pnpm build"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0",
