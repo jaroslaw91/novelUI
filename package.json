@@ -1,7 +1,7 @@
 {
 	"name": "@jaroslaw91/novelui",
 	"private": false,
-	"version": "1.0.18",
+	"version": "1.0.19",
 	"type": "module",
 	"main": "dist/novelui.cjs.js",
 	"module": "dist/novelui.es.js",
