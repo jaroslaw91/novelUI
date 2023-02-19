@@ -2198,17 +2198,12 @@ Read more about this at https://www.styled-components.com/docs/basics#react-nati
 
 See https://s-c.sh/2BAXzed for more info.`), window["__styled-components-init__"] += 1);
 const xe = ht, In = xe.hr`
-	${({ theme: { colors: e }, width: r }) => J`
-			width: ${r} || 100%;
+	width: 100%;
+
+	${({ theme: { colors: e } }) => J`
 			border: 0.5px solid ${e.color5};
 		`}
-`, so = ({ width: e, "data-testid": r = "break" }) => /* @__PURE__ */ ve(
-  In,
-  {
-    width: e,
-    "data-testid": r
-  }
-), Dn = xe.div`
+`, so = ({ "data-testid": e = "break" }) => /* @__PURE__ */ ve(In, { "data-testid": e }), Dn = xe.div`
 	text-align: center;
 	display: flex;
 
