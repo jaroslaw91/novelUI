@@ -11,5 +11,6 @@ const Template: ComponentStory<typeof Break> = args => <Break {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
+	width: '100%',
 	'data-testid': 'break',
 }
