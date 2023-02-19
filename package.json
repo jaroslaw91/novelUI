@@ -3,7 +3,7 @@
 	"private": false,
 	"version": "1.0.21",
 	"type": "module",
-	"main": "dist/novelui.cjs.js",
+	"main": "dist/novelui.umd.js",
 	"module": "dist/novelui.es.js",
 	"types": "dist/index.d.ts",
 	"publishConfig": {
