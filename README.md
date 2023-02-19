@@ -27,6 +27,10 @@ STORY<strong>BOOK</strong>
 
 <a href="https://novelui.vercel.app/" style='color: red;'>`https://novelui.vercel.app/`</a>
 
+NPM<strong>JS</strong>
+
+<a href="https://www.npmjs.com/package/@jaroslaw91/novelui" style='color: red;'>`@jaroslaw91/novelui`</a>
+
 <br />
 <br />
 
