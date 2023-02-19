@@ -114,12 +114,11 @@ Perhaps you're looking to import 'styled-components/native'?
 Read more about this at https://www.styled-components.com/docs/basics#react-native`),process.env.NODE_ENV!=="production"&&process.env.NODE_ENV!=="test"&&typeof window<"u"&&(window["__styled-components-init__"]=window["__styled-components-init__"]||0,window["__styled-components-init__"]===1&&console.warn(`It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.
 
 See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]+=1);const Ae=mt,Sn=Ae.hr`
-	width: 100%;
-
-	${({theme:{colors:e}})=>K`
+	${({theme:{colors:e},width:r})=>K`
+			width: ${r} || 100%;
 			border: 0.5px solid ${e.color5};
 		`}
-`,En=({"data-testid":e="break"})=>ye(Sn,{"data-testid":e}),wn=Ae.div`
+`,En=({width:e,"data-testid":r="break"})=>ye(Sn,{width:e,"data-testid":r}),wn=Ae.div`
 	text-align: center;
 	display: flex;
 
