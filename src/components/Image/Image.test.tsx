@@ -1,4 +1,4 @@
-import { describe, it, render, waitFor } from '../../utils/tests-utils'
+import { describe, it, render, vi, waitFor } from '../../utils/tests-utils'
 import { Image } from './Image'
 
 describe('components/Image', () => {
@@ -7,6 +7,20 @@ describe('components/Image', () => {
 			<Image
 				src="image-link"
 				alt="image-alt"
+			/>,
+		)
+
+		await waitFor(() => {
+			expect(getByTestId('image')).toBeInTheDocument()
+		})
+	})
+
+	it('should have onClick', async () => {
+		const { getByTestId } = render(
+			<Image
+				src="image-link"
+				alt="image-alt"
+				onClick={vi.fn()}
 			/>,
 		)
 
