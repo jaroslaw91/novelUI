@@ -1,11 +1,11 @@
 <div align='center'>
 
-# <img src='./src/assets/images/nui.svg' width='200px' />
+# <img src='https://raw.githubusercontent.com/jaroslaw91/novelUI/ef991cc73e7b759f6b32560b3d97c05527b53180/src/assets/images/nui.svg' width='200px' />
 
-<img src='./coverage/badges/badge-statements.svg' />
-<img src='./coverage/badges/badge-branches.svg' />
-<img src='./coverage/badges/badge-functions.svg' />
-<img src='./coverage/badges/badge-lines.svg' />
+<img src='https://raw.githubusercontent.com/jaroslaw91/novelUI/ef991cc73e7b759f6b32560b3d97c05527b53180/coverage/badges/badge-statements.svg' />
+<img src='https://raw.githubusercontent.com/jaroslaw91/novelUI/ef991cc73e7b759f6b32560b3d97c05527b53180/coverage/badges/badge-branches.svg' />
+<img src='https://raw.githubusercontent.com/jaroslaw91/novelUI/ef991cc73e7b759f6b32560b3d97c05527b53180/coverage/badges/badge-functions.svg' />
+<img src='https://raw.githubusercontent.com/jaroslaw91/novelUI/ef991cc73e7b759f6b32560b3d97c05527b53180/coverage/badges/badge-lines.svg' />
 
 ##
 
