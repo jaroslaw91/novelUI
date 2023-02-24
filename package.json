@@ -1,10 +1,10 @@
 {
 	"name": "@jaroslaw91/novelui",
 	"private": false,
-	"version": "1.0.25",
+	"version": "1.0.26",
 	"type": "module",
-	"main": "dist/index.js",
-	"module": "dist/index.js",
+	"main": "./dist/novelui.umd.cjs",
+	"module": "./dist/novelui.js",
 	"types": "dist/index.d.ts",
 	"publishConfig": {
 		"access": "public",
@@ -14,6 +14,12 @@
 		"/dist",
 		"README.md"
 	],
+	"exports": {
+		".": {
+			"import": "./dist/novelui.js",
+			"require": "./dist/novelui.umd.cjs"
+		}
+	},
 	"scripts": {
 		"dev": "vite",
 		"build": "rm -rf ./dist && tsc && vite build",
