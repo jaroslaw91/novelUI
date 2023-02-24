@@ -1,6 +1,6 @@
-import NiceModal from '@ebay/nice-modal-react'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
+import { modalShow } from '../../utils/modalShow'
 import { Button } from '../Button'
 import { Modal } from './Modal'
 
@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Modal>
 
 const showAddModal = () => {
-	NiceModal.show(Modal, {
+	modalShow({
 		id: 'modal',
 		title: 'Modal title',
 		subtitle: 'Modal subtitle',
@@ -18,6 +18,7 @@ const showAddModal = () => {
 		actionName: 'Remove',
 		cancelName: 'Cancel',
 		variant: 'alert',
+		action: () => null,
 	})
 }
 

@@ -22,6 +22,7 @@ export const modalShow = ({
 	actionName,
 	cancelName,
 	variant = 'primary',
+	action,
 }: ModalShowProps) =>
 	NiceModal.show(Modal, {
 		id,
@@ -31,4 +32,5 @@ export const modalShow = ({
 		actionName,
 		cancelName,
 		variant,
+		action,
 	})
