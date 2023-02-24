@@ -20,15 +20,11 @@ export default defineConfig({
 		lib: {
 			entry: resolve('src', 'index.ts'),
 			name: 'novelUI',
-			fileName: 'novelui',
+			formats: ['es', 'umd'],
+			fileName: format => `novelui.${format}.js`,
 		},
 		rollupOptions: {
-			external: 'react',
-			output: {
-				globals: {
-					react: 'React',
-				},
-			},
+			external: [...Object.keys(packageJson.peerDependencies)],
 		},
 	},
 	test: {
