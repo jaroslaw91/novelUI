@@ -1,18 +1,25 @@
 {
 	"name": "@jaroslaw91/novelui",
 	"private": false,
-	"version": "1.0.24",
+	"version": "1.0.28",
 	"type": "module",
-	"main": "dist/novelui.umd.js",
-	"module": "dist/novelui.es.js",
+	"main": "./dist/novelui.umd.cjs",
+	"module": "./dist/novelui.js",
 	"types": "dist/index.d.ts",
 	"publishConfig": {
 		"access": "public",
 		"registry": "https://registry.npmjs.org/"
 	},
 	"files": [
-		"/dist"
+		"/dist",
+		"README.md"
 	],
+	"exports": {
+		".": {
+			"import": "./dist/novelui.js",
+			"require": "./dist/novelui.umd.cjs"
+		}
+	},
 	"scripts": {
 		"dev": "vite",
 		"build": "rm -rf ./dist && tsc && vite build",
