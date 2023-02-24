@@ -1,4 +1,4 @@
-(function(ve,$){typeof exports=="object"&&typeof module<"u"?$(exports,require("react")):typeof define=="function"&&define.amd?define(["exports","react"],$):(ve=typeof globalThis<"u"?globalThis:ve||self,$(ve.novelUI={},ve.r))})(this,function(ve,$){"use strict";var Je={},hr={get exports(){return Je},set exports(e){Je=e}},ke={};/**
+(function(ve,$){typeof exports=="object"&&typeof module<"u"?$(exports,require("react")):typeof define=="function"&&define.amd?define(["exports","react"],$):(ve=typeof globalThis<"u"?globalThis:ve||self,$(ve.novelUI={},ve.React))})(this,function(ve,$){"use strict";var Je={},hr={get exports(){return Je},set exports(e){Je=e}},ke={};/**
  * @license React
  * react-jsx-runtime.production.min.js
  *
