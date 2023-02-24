@@ -1,7 +1,7 @@
 {
 	"name": "@jaroslaw91/novelui",
 	"private": false,
-	"version": "1.0.95",
+	"version": "1.0.96",
 	"type": "module",
 	"repository": {
 		"type": "git",
@@ -53,6 +53,7 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"@ebay/nice-modal-react": "^1.2.8",
 		"@storybook/addon-essentials": "^7.0.0-beta.43",
 		"@storybook/addon-interactions": "^7.0.0-beta.43",
 		"@storybook/addon-links": "^7.0.0-beta.43",
