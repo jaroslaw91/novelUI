@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react';
 export interface HeadingProps {
-    level?: 1 | 2;
+    level?: 1 | 2 | 3;
     children: ReactNode;
     align?: 'left' | 'center' | 'right';
     'data-testid'?: string;

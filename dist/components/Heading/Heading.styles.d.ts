@@ -1,6 +1,6 @@
 import { DefaultTheme } from 'styled-components';
 interface HeadingComponentProps {
-    level?: 1 | 2;
+    level?: 1 | 2 | 3;
     align?: 'left' | 'center' | 'right';
 }
 export declare const HeadingComponent: import("styled-components").StyledComponent<"h1", DefaultTheme, HeadingComponentProps, never>;
