@@ -271,7 +271,7 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
-			overflow: scroll;
+			overflow-y: auto;
 
 			@media (max-width: ${e.mobile}px) {
 				width: 100%;

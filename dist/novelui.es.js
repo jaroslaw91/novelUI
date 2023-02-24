@@ -2447,7 +2447,7 @@ const Gn = Ne.div`
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
-			overflow: scroll;
+			overflow-y: auto;
 
 			@media (max-width: ${e.mobile}px) {
 				width: 100%;
