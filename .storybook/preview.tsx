@@ -1,3 +1,4 @@
+import NiceModal from '@ebay/nice-modal-react'
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
@@ -12,7 +13,9 @@ const withTheme = (StoryFn, context) => {
 		<ThemeProvider theme={storyTheme}>
 			<GlobalStyles />
 
-			<StoryFn />
+			<NiceModal.Provider>
+				<StoryFn />
+			</NiceModal.Provider>
 		</ThemeProvider>
 	)
 }

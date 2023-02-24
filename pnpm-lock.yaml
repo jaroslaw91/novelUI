@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ebay/nice-modal-react': ^1.2.8
   '@storybook/addon-essentials': ^7.0.0-beta.43
   '@storybook/addon-interactions': ^7.0.0-beta.43
   '@storybook/addon-links': ^7.0.0-beta.43
@@ -53,6 +54,7 @@ specifiers:
   vitest: ^0.28.4
 
 devDependencies:
+  '@ebay/nice-modal-react': 1.2.8_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-essentials': 7.0.0-beta.54_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-interactions': 7.0.0-beta.54_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-links': 7.0.0-beta.54_biqbaboplfbrettd7655fr4n2y
@@ -1667,6 +1669,16 @@ packages:
   /@discoveryjs/json-ext/0.5.7:
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
     engines: {node: '>=10.0.0'}
+    dev: true
+
+  /@ebay/nice-modal-react/1.2.8_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-5C+9/zWsaYeDMI3HLVIg2clQzVmhepxOGeVdAWOyww2GZJ4Cl3NgzPHyO70SIkG0a4aXvUruyDnPM+jx7DzSJg==}
+    peerDependencies:
+      react: '>16.8.0'
+      react-dom: '>16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: true
 
   /@emotion/is-prop-valid/1.2.0:

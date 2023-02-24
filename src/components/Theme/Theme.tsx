@@ -1,3 +1,4 @@
+import NiceModal from '@ebay/nice-modal-react'
 import { FC, ReactNode } from 'react'
 import { ThemeProvider } from 'styled-components'
 
@@ -16,7 +17,7 @@ export const Theme: FC<ThemeProps> = ({ theme = 'dark', children }) => {
 		<ThemeProvider theme={appTheme}>
 			<GlobalStyles />
 
-			{children}
+			<NiceModal.Provider>{children}</NiceModal.Provider>
 		</ThemeProvider>
 	)
 }

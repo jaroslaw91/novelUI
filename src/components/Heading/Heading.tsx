@@ -3,7 +3,7 @@ import { FC, ReactNode } from 'react'
 import { HeadingComponent } from './Heading.styles'
 
 export interface HeadingProps {
-	level?: 1 | 2
+	level?: 1 | 2 | 3
 	children: ReactNode
 	align?: 'left' | 'center' | 'right'
 	'data-testid'?: string
