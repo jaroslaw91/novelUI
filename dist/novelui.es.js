@@ -4094,16 +4094,20 @@ const Ha = Te.div`
 			background-color: ${r.secondary_opacity};
 
 			@media (max-width: ${e.mobile}px) {
-				padding: ${t.medium};
+				padding: 0 ${t.medium};
 				overflow: none;
 			}
 		`}
 `, Ua = Te.div`
-	${({ theme: { colors: e, spaces: t } }) => I`
-			padding: ${t.medium};
+	${({ theme: { breakpoints: e, colors: t, spaces: r } }) => I`
+			padding: ${r.medium};
 			width: 700px;
 			border-radius: 10px;
-			background-color: ${e.main};
+			background-color: ${t.main};
+
+			@media (max-width: ${e.mobile}px) {
+				width: 100%;
+			}
 		`}
 `, Ga = Te.div`
 	${({ theme: { colors: e } }) => I`
@@ -4130,7 +4134,9 @@ const Ha = Te.div`
 			gap: ${t.medium};
 
 			@media (max-width: ${e.mobile}px) {
+				flex-direction: column-reverse;
 				justify-content: center;
+				flex-wrap: wrap;
 			}
 		`}
 `, Ja = sr.create(

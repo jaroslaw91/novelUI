@@ -1102,16 +1102,20 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 			background-color: ${r.secondary_opacity};
 
 			@media (max-width: ${e.mobile}px) {
-				padding: ${t.medium};
+				padding: 0 ${t.medium};
 				overflow: none;
 			}
 		`}
 `,wa=Te.div`
-	${({theme:{colors:e,spaces:t}})=>G`
-			padding: ${t.medium};
+	${({theme:{breakpoints:e,colors:t,spaces:r}})=>G`
+			padding: ${r.medium};
 			width: 700px;
 			border-radius: 10px;
-			background-color: ${e.main};
+			background-color: ${t.main};
+
+			@media (max-width: ${e.mobile}px) {
+				width: 100%;
+			}
 		`}
 `,Pa=Te.div`
 	${({theme:{colors:e}})=>G`
@@ -1138,7 +1142,9 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 			gap: ${t.medium};
 
 			@media (max-width: ${e.mobile}px) {
+				flex-direction: column-reverse;
 				justify-content: center;
+				flex-wrap: wrap;
 			}
 		`}
 `,Xa=Jt.create(({id:e,title:t,subtitle:r="",content:n,variant:i="primary",action:s,actionName:a,cancelName:l,"data-testid":d="modal"})=>{const v=It(),m=()=>v.remove();return ae(ga,{id:e,"data-testid":d,children:Ze(wa,{children:[Ze(Pa,{children:[Ze("div",{children:[ae(Bt,{level:3,align:"left",children:t}),r&&Ze(yn,{children:[ae(ut,{type:"vertical",space:"tiny"}),ae(jt,{children:r})]})]}),ae(ba,{onClick:m,className:"close-icon"})]}),ae(ut,{type:"vertical"}),ae("div",{children:n}),ae(ut,{type:"vertical",space:"large"}),Ze(Ta,{children:[ae(wt,{variant:"secondary",action:m,children:l}),ae(wt,{variant:i,action:()=>{s(),m()},children:a})]})]})})}),qa=({id:e,title:t,subtitle:r="",content:n,actionName:i,cancelName:s,variant:a="primary",action:l})=>Jt.show(Xa,{id:e,title:t,subtitle:r,content:n,actionName:i,cancelName:s,variant:a,action:l}),Na=(e,t)=>fe[t](e,{position:window.innerWidth<=er.MOBILE?"top-center":"bottom-left",autoClose:3e3,hideProgressBar:!1,closeOnClick:!0,pauseOnHover:!0,closeButton:!1,draggable:!0,progress:void 0});Pe.Break=Ao,Pe.Button=wt,Pe.Heading=Bt,Pe.Image=Mr,Pe.Layout=Rr,Pe.Loader=Ct,Pe.Paragraph=jt,Pe.Spacer=ut,Pe.Theme=va,Pe.modalShow=qa,Pe.toastNotify=Na,Object.defineProperty(Pe,Symbol.toStringTag,{value:"Module"})});
