@@ -3607,7 +3607,8 @@ const Ca = Xe.div`
   cancelName: s,
   variant: a,
   action: l
-}), $a = (e, t) => de[t](e, {
+});
+const $a = (e, t) => de[t](e, {
   position: window.innerWidth <= $t.MOBILE ? "top-center" : "bottom-left",
   autoClose: 3e3,
   hideProgressBar: !1,
