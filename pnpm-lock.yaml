@@ -68,7 +68,7 @@ devDependencies:
   '@testing-library/dom': 8.20.0
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
-  '@trivago/prettier-plugin-sort-imports': 4.1.0_prettier@2.8.4
+  '@trivago/prettier-plugin-sort-imports': 4.1.1_prettier@2.8.4
   '@types/jest': 29.4.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -4502,8 +4502,8 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@trivago/prettier-plugin-sort-imports/4.1.0_prettier@2.8.4:
-    resolution: {integrity: sha512-aTr6QPFaPAAzPRFn9yWB/9yKi3ZAFqfGpxIGLPWuQfYJFGUed+W3KKwxntsoCiNvNE2iuKOg6haMo5KG8WXltg==}
+  /@trivago/prettier-plugin-sort-imports/4.1.1_prettier@2.8.4:
+    resolution: {integrity: sha512-dQ2r2uzNr1x6pJsuh/8x0IRA3CBUB+pWEW3J/7N98axqt7SQSm+2fy0FLNXvXGg77xEDC7KHxJlHfLYyi7PDcw==}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
       prettier: 2.x
@@ -6308,7 +6308,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001457
-      electron-to-chromium: 1.4.310
+      electron-to-chromium: 1.4.311
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
     dev: true
@@ -7587,8 +7587,8 @@ packages:
       jake: 10.8.5
     dev: true
 
-  /electron-to-chromium/1.4.310:
-    resolution: {integrity: sha512-/xlATgfwkm5uDDwLw5nt/MNEf7c1oazLURMZLy39vOioGYyYzLWIDT8fZMJak6qTiAJ7udFTy7JG7ziyjNutiA==}
+  /electron-to-chromium/1.4.311:
+    resolution: {integrity: sha512-RoDlZufvrtr2Nx3Yx5MB8jX3aHIxm8nRWPJm3yVvyHmyKaRvn90RjzB6hNnt0AkhS3IInJdyRfQb4mWhPvUjVw==}
     dev: true
 
   /elliptic/6.5.4:
