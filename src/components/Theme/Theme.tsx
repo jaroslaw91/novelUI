@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify'
 import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyles } from '../../styles/GlobalStyles'
+import { ToastStyles } from '../../styles/ToastStyles'
 import { darkTheme, lightTheme } from '../../styles/theme'
 
 export interface ThemeProps {
@@ -17,8 +18,8 @@ export const Theme: FC<ThemeProps> = ({ theme = 'dark', children }) => {
 	return (
 		<ThemeProvider theme={appTheme}>
 			<GlobalStyles />
-
 			<ToastContainer theme={theme} />
+			<ToastStyles />
 
 			<NiceModal.Provider>{children}</NiceModal.Provider>
 		</ThemeProvider>

@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify'
 import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyles } from '../src/styles/GlobalStyles'
+import { ToastStyles } from '../src/styles/ToastStyles'
 import { darkTheme, lightTheme } from '../src/styles/theme'
 
 const withTheme = (StoryFn, context) => {
@@ -13,8 +14,8 @@ const withTheme = (StoryFn, context) => {
 	return (
 		<ThemeProvider theme={storyTheme}>
 			<GlobalStyles />
-
 			<ToastContainer theme={theme} />
+			<ToastStyles />
 
 			<NiceModal.Provider>
 				<StoryFn />
