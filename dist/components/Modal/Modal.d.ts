@@ -1,12 +1,12 @@
 import { NiceModalHocProps } from '@ebay/nice-modal-react';
-import { FC, ReactEventHandler, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 export interface ModalProps {
     id: string;
     title: string;
     subtitle?: string;
     content: ReactNode;
     variant?: 'primary' | 'secondary' | 'alert';
-    action: ReactEventHandler<HTMLButtonElement>;
+    action: () => void;
     actionName: string;
     cancelName: string;
     'data-testid'?: string;

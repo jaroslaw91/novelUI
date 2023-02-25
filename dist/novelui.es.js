@@ -3274,7 +3274,9 @@ const lo = he.div`
               zt,
               {
                 variant: o,
-                action: s,
+                action: () => {
+                  s(), m();
+                },
                 children: i
               }
             )
