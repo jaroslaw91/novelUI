@@ -2,12 +2,14 @@ import { BREAKPOINTS } from '../constants/breakpoints'
 
 const Colors = {
 	Grey100: '#090909',
+	Grey100_50: '#09090980',
 	Grey200: '#111111',
 	Grey300: '#3C3C3C',
 	Grey400: '#797979',
 	White100: '#EAEAEA',
 	White200: '#EEEEEE',
 	White300: '#DDDDDD',
+	White300_50: '#DDDDDD80',
 	Red100: '#F97777',
 	Red200: '#F86565',
 	Orange100: '#EFA360',
@@ -71,6 +73,7 @@ export const lightTheme = {
 	colors: {
 		main: Colors.White100,
 		secondary: Colors.Grey100,
+		secondary_opacity: Colors.Grey100_50,
 		color1: Colors.Grey300,
 		color2: Colors.Grey200,
 		color3: Colors.White200,
@@ -96,6 +99,7 @@ export const darkTheme = {
 	colors: {
 		main: Colors.Grey100,
 		secondary: Colors.White300,
+		secondary_opacity: Colors.White300_50,
 		color1: Colors.White100,
 		color2: Colors.White200,
 		color3: Colors.Grey200,

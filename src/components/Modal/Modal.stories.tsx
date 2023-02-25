@@ -28,7 +28,7 @@ const Template: ComponentStory<typeof Modal> = args => (
 			variant="secondary"
 			action={() => showAddModal()}
 		>
-			CLICK
+			OPEN MODAL
 		</Button>
 
 		<Modal {...args} />
