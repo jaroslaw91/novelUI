@@ -377,27 +377,6 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 		:root {
 			font-family: 'Poppins', sans-serif;
 			font-weight: ${e.weights.regular};
-	
-			--toastify-color-light: ${t.secondary};
-			--toastify-color-dark: ${t.secondary};
-			--toastify-color-info: ${t.toastInfo};;
-			--toastify-color-success: ${t.toastSuccess};
-			--toastify-color-warning: ${t.toastWarning};
-			--toastify-color-error: ${t.toastError};
-			
-			--toastify-icon-color-info: var(--toastify-color-info);
-			--toastify-icon-color-success: var(--toastify-color-success);
-			--toastify-icon-color-warning: var(--toastify-color-warning);
-			--toastify-icon-color-error: var(--toastify-color-error);
-			
-			--toastify-toast-width: 320px;
-			--toastify-toast-min-height: 64px;
-			--toastify-toast-max-height: 800px;
-			--toastify-font-family: 'Poppins', sans-serif;
-			--toastify-z-index: 9999;
-			
-			--toastify-text-color-light: ${t.main};
-			--toastify-text-color-dark: ${t.main};
 		}
 	
 		*,
@@ -467,17 +446,14 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 		}
 	`}	
 `,da=kr`
-	${({theme:{font:e,colors:t}})=>G`
+	${({theme:{colors:e}})=>G`
 			:root {
-				font-family: 'Poppins', sans-serif;
-				font-weight: ${e.weights.regular};
-
-				--toastify-color-light: ${t.secondary};
-				--toastify-color-dark: ${t.secondary};
-				--toastify-color-info: ${t.toastInfo};
-				--toastify-color-success: ${t.toastSuccess};
-				--toastify-color-warning: ${t.toastWarning};
-				--toastify-color-error: ${t.toastError};
+				--toastify-color-light: ${e.secondary};
+				--toastify-color-dark: ${e.secondary};
+				--toastify-color-info: ${e.toastInfo};
+				--toastify-color-success: ${e.toastSuccess};
+				--toastify-color-warning: ${e.toastWarning};
+				--toastify-color-error: ${e.toastError};
 
 				--toastify-icon-color-info: var(--toastify-color-info);
 				--toastify-icon-color-success: var(--toastify-color-success);
@@ -490,8 +466,16 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 				--toastify-font-family: 'Poppins', sans-serif;
 				--toastify-z-index: 9999;
 
-				--toastify-text-color-light: ${t.main};
-				--toastify-text-color-dark: ${t.main};
+				--toastify-text-color-light: ${e.main};
+				--toastify-text-color-dark: ${e.main};
+
+				--toastify-spinner-color: #616161;
+				--toastify-spinner-color-empty-area: #e0e0e0;
+
+				--toastify-color-progress-info: var(--toastify-color-info);
+				--toastify-color-progress-success: var(--toastify-color-success);
+				--toastify-color-progress-warning: var(--toastify-color-warning);
+				--toastify-color-progress-error: var(--toastify-color-error);
 			}
 
 			.Toastify__toast-container {
