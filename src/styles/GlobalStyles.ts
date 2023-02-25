@@ -34,27 +34,6 @@ export const GlobalStyles = createGlobalStyle`
 		:root {
 			font-family: 'Poppins', sans-serif;
 			font-weight: ${font.weights.regular};
-	
-			--toastify-color-light: ${colors.secondary};
-			--toastify-color-dark: ${colors.secondary};
-			--toastify-color-info: ${colors.toastInfo};;
-			--toastify-color-success: ${colors.toastSuccess};
-			--toastify-color-warning: ${colors.toastWarning};
-			--toastify-color-error: ${colors.toastError};
-			
-			--toastify-icon-color-info: var(--toastify-color-info);
-			--toastify-icon-color-success: var(--toastify-color-success);
-			--toastify-icon-color-warning: var(--toastify-color-warning);
-			--toastify-icon-color-error: var(--toastify-color-error);
-			
-			--toastify-toast-width: 320px;
-			--toastify-toast-min-height: 64px;
-			--toastify-toast-max-height: 800px;
-			--toastify-font-family: 'Poppins', sans-serif;
-			--toastify-z-index: 9999;
-			
-			--toastify-text-color-light: ${colors.main};
-			--toastify-text-color-dark: ${colors.main};
 		}
 	
 		*,

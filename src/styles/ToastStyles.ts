@@ -1,12 +1,9 @@
 import { createGlobalStyle, css } from 'styled-components'
 
 export const ToastStyles = createGlobalStyle`
-	${({ theme: { font, colors } }) =>
+	${({ theme: { colors } }) =>
 		css`
 			:root {
-				font-family: 'Poppins', sans-serif;
-				font-weight: ${font.weights.regular};
-
 				--toastify-color-light: ${colors.secondary};
 				--toastify-color-dark: ${colors.secondary};
 				--toastify-color-info: ${colors.toastInfo};
@@ -27,6 +24,14 @@ export const ToastStyles = createGlobalStyle`
 
 				--toastify-text-color-light: ${colors.main};
 				--toastify-text-color-dark: ${colors.main};
+
+				--toastify-spinner-color: #616161;
+				--toastify-spinner-color-empty-area: #e0e0e0;
+
+				--toastify-color-progress-info: var(--toastify-color-info);
+				--toastify-color-progress-success: var(--toastify-color-success);
+				--toastify-color-progress-warning: var(--toastify-color-warning);
+				--toastify-color-progress-error: var(--toastify-color-error);
 			}
 
 			.Toastify__toast-container {
