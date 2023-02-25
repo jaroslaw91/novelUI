@@ -1,5 +1,6 @@
 import NiceModal from '@ebay/nice-modal-react'
 import React from 'react'
+import { ToastContainer } from 'react-toastify'
 import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyles } from '../src/styles/GlobalStyles'
@@ -12,6 +13,8 @@ const withTheme = (StoryFn, context) => {
 	return (
 		<ThemeProvider theme={storyTheme}>
 			<GlobalStyles />
+
+			<ToastContainer theme={theme} />
 
 			<NiceModal.Provider>
 				<StoryFn />

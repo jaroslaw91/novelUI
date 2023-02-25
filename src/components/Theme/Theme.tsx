@@ -1,5 +1,6 @@
 import NiceModal from '@ebay/nice-modal-react'
 import { FC, ReactNode } from 'react'
+import { ToastContainer } from 'react-toastify'
 import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyles } from '../../styles/GlobalStyles'
@@ -16,6 +17,8 @@ export const Theme: FC<ThemeProps> = ({ theme = 'dark', children }) => {
 	return (
 		<ThemeProvider theme={appTheme}>
 			<GlobalStyles />
+
+			<ToastContainer theme={theme} />
 
 			<NiceModal.Provider>{children}</NiceModal.Provider>
 		</ThemeProvider>
