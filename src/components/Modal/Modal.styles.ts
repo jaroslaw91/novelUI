@@ -13,7 +13,6 @@ export const ModalContainerComponent = styled.div`
 			background-color: ${colors.secondary_opacity};
 
 			@media (max-width: ${breakpoints.mobile}px) {
-				width: 100%;
 				padding: ${spaces.medium};
 				overflow: none;
 			}
@@ -21,27 +20,12 @@ export const ModalContainerComponent = styled.div`
 `
 
 export const ModalComponent = styled.div`
-	${({ theme: { breakpoints, colors, spaces } }) =>
+	${({ theme: { colors, spaces } }) =>
 		css`
 			padding: ${spaces.medium};
 			width: 700px;
 			border-radius: 10px;
 			background-color: ${colors.main};
-
-			@media (max-width: ${breakpoints.mobile}px) {
-				width: 100%;
-				overflow: none;
-			}
-		`}
-`
-
-export const ModalActionsComponent = styled.div`
-	${({ theme: { spaces } }) =>
-		css`
-			width: 100%;
-			display: flex;
-			justify-content: flex-end;
-			gap: ${spaces.medium};
 		`}
 `
 
@@ -61,6 +45,20 @@ export const ModalHeadingComponent = styled.div`
 				&:hover {
 					color: ${colors.color5};
 				}
+			}
+		`}
+`
+
+export const ModalActionsComponent = styled.div`
+	${({ theme: { breakpoints, spaces } }) =>
+		css`
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+			gap: ${spaces.medium};
+
+			@media (max-width: ${breakpoints.mobile}px) {
+				justify-content: center;
 			}
 		`}
 `
