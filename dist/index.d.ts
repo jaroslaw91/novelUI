@@ -8,4 +8,5 @@ export * from './components/Paragraph';
 export * from './components/Spacer';
 export * from './components/Theme';
 export * from './utils/modalShow';
+export * from './utils/toastNotify';
 //# sourceMappingURL=index.d.ts.map
