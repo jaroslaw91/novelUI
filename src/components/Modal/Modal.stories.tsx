@@ -18,7 +18,8 @@ const showAddModal = () => {
 		actionName: 'Remove',
 		cancelName: 'Cancel',
 		variant: 'alert',
-		action: () => null,
+		// eslint-disable-next-line no-alert
+		action: () => alert('Removed!'),
 	})
 }
 

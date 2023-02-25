@@ -1,5 +1,5 @@
 import NiceModal, { NiceModalHocProps, useModal } from '@ebay/nice-modal-react'
-import { FC, ReactEventHandler, ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 import { HiXCircle } from 'react-icons/hi2'
 
 import { Button } from '../Button'
@@ -19,7 +19,7 @@ export interface ModalProps {
 	subtitle?: string
 	content: ReactNode
 	variant?: 'primary' | 'secondary' | 'alert'
-	action: ReactEventHandler<HTMLButtonElement>
+	action: () => void
 	actionName: string
 	cancelName: string
 	'data-testid'?: string
@@ -40,6 +40,11 @@ export const Modal: FC<ModalProps & NiceModalHocProps> = NiceModal.create(
 		const modal = useModal()
 
 		const closeModal = () => modal.remove()
+
+		const handleAction = () => {
+			action()
+			closeModal()
+		}
 
 		return (
 			<ModalContainerComponent
@@ -93,7 +98,7 @@ export const Modal: FC<ModalProps & NiceModalHocProps> = NiceModal.create(
 
 						<Button
 							variant={variant}
-							action={action}
+							action={handleAction}
 						>
 							{actionName}
 						</Button>
