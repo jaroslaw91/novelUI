@@ -2,6 +2,7 @@ export declare const lightTheme: {
     colors: {
         main: string;
         secondary: string;
+        secondary_opacity: string;
         color1: string;
         color2: string;
         color3: string;
@@ -62,6 +63,7 @@ export declare const darkTheme: {
     colors: {
         main: string;
         secondary: string;
+        secondary_opacity: string;
         color1: string;
         color2: string;
         color3: string;
