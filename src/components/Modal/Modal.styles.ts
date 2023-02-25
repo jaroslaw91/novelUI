@@ -13,19 +13,23 @@ export const ModalContainerComponent = styled.div`
 			background-color: ${colors.secondary_opacity};
 
 			@media (max-width: ${breakpoints.mobile}px) {
-				padding: ${spaces.medium};
+				padding: 0 ${spaces.medium};
 				overflow: none;
 			}
 		`}
 `
 
 export const ModalComponent = styled.div`
-	${({ theme: { colors, spaces } }) =>
+	${({ theme: { breakpoints, colors, spaces } }) =>
 		css`
 			padding: ${spaces.medium};
 			width: 700px;
 			border-radius: 10px;
 			background-color: ${colors.main};
+
+			@media (max-width: ${breakpoints.mobile}px) {
+				width: 100%;
+			}
 		`}
 `
 
@@ -58,7 +62,9 @@ export const ModalActionsComponent = styled.div`
 			gap: ${spaces.medium};
 
 			@media (max-width: ${breakpoints.mobile}px) {
+				flex-direction: column-reverse;
 				justify-content: center;
+				flex-wrap: wrap;
 			}
 		`}
 `
