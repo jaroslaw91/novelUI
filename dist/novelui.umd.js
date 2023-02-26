@@ -282,7 +282,6 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 			@media (max-width: ${e.mobile}px) {
 				width: 100%;
 				height: calc(100vh - 112px);
-				overflow: none;
 			}
 		`}
 `,Oo=Te.div`

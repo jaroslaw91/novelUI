@@ -2459,7 +2459,6 @@ const _o = Te.div`
 			@media (max-width: ${e.mobile}px) {
 				width: 100%;
 				height: calc(100vh - 112px);
-				overflow: none;
 			}
 		`}
 `, $o = Te.div`
