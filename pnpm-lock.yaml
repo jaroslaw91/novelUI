@@ -47,6 +47,7 @@ specifiers:
   react-i18next: ^12.2.0
   react-icons: ^4.7.1
   react-is: ^18.2.0
+  react-laag: ^2.0.5
   react-toastify: ^9.1.1
   storybook: ^7.0.0-beta.43
   styled-components: ^5.3.6
@@ -103,6 +104,7 @@ devDependencies:
   react-i18next: 12.2.0_3yopsigl4h4eb2nqrqfsy65uwi
   react-icons: 4.7.1_react@18.2.0
   react-is: 18.2.0
+  react-laag: 2.0.5_biqbaboplfbrettd7655fr4n2y
   react-toastify: 9.1.1_biqbaboplfbrettd7655fr4n2y
   storybook: 7.0.0-beta.54
   styled-components: 5.3.6_7i5myeigehqah43i5u7wbekgba
@@ -12801,6 +12803,17 @@ packages:
 
   /react-is/18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+    dev: true
+
+  /react-laag/2.0.5_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-RCvublJhdcgGRHU1wMYJ8kRtnYsKUgYusLvVhMuftg65POnnOB4+fwXvnETm6adc0cMnc1spujlrK6bGIz6aug==}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      tiny-warning: 1.0.3
     dev: true
 
   /react-refresh/0.11.0:
