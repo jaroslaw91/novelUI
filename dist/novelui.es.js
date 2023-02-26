@@ -2493,7 +2493,6 @@ const _o = Te.div`
 
 			@media (max-width: ${t.mobile}px) {
 				width: 100%;
-				height: calc(100vh - 172px);
 			}
 		`}
 `, ta = ({

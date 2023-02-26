@@ -316,7 +316,6 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 
 			@media (max-width: ${t.mobile}px) {
 				width: 100%;
-				height: calc(100vh - 172px);
 			}
 		`}
 `,Rr=({children:e,image:t,"data-testid":r="layout"})=>Ze(xo,{"data-testid":r,children:[ae(Oo,{image:t}),ae(So,{children:e})]});Rr.displayName="Layout";const zo=({colors:e},t="label")=>({default:G`
