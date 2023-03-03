@@ -3116,8 +3116,8 @@ const Vi = Te.div`
 			}
 		`}
 `, Fi = Te.div`
-	${({ theme: { spaces: e, breakpoints: t }, hasFullWidth: r }) => te`
-			width: ${r ? "100%" : "400px"};
+	${({ theme: { spaces: e, breakpoints: t } }) => te`
+			width: 400px;
 			margin: 0 auto;
 			padding: ${e.huge} ${e.big};
 			display: flex;
@@ -3131,11 +3131,10 @@ const Vi = Te.div`
 `, ki = ({
   children: e,
   image: t,
-  hasFullWidth: r,
-  "data-testid": n = "layout"
-}) => /* @__PURE__ */ ze(Vi, { "data-testid": n, children: [
+  "data-testid": r = "layout"
+}) => /* @__PURE__ */ ze(Vi, { "data-testid": r, children: [
   /* @__PURE__ */ U(Ci, { image: t }),
-  /* @__PURE__ */ U(Fi, { hasFullWidth: r, children: e })
+  /* @__PURE__ */ U(Fi, { children: e })
 ] });
 ki.displayName = "Layout";
 const Mi = Te.div`

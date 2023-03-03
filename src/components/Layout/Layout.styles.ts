@@ -4,10 +4,6 @@ interface PresentionalComponentProps {
 	image?: string
 }
 
-interface ChildrenComponentProps {
-	hasFullWidth?: boolean
-}
-
 export const LayoutComponent = styled.div`
 	${({ theme: { breakpoints } }) =>
 		css`
@@ -48,10 +44,10 @@ export const PresentionalComponent = styled.div<PresentionalComponentProps>`
 		`}
 `
 
-export const ChildrenComponent = styled.div<ChildrenComponentProps>`
-	${({ theme: { spaces, breakpoints }, hasFullWidth }) =>
+export const ChildrenComponent = styled.div`
+	${({ theme: { spaces, breakpoints } }) =>
 		css`
-			width: ${hasFullWidth ? '100%' : '400px'};
+			width: 400px;
 			margin: 0 auto;
 			padding: ${spaces.huge} ${spaces.big};
 			display: flex;

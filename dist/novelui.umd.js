@@ -420,8 +420,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 			}
 		`}
 `,ci=be.div`
-	${({theme:{spaces:e,breakpoints:t},hasFullWidth:r})=>$`
-			width: ${r?"100%":"400px"};
+	${({theme:{spaces:e,breakpoints:t}})=>$`
+			width: 400px;
 			margin: 0 auto;
 			padding: ${e.huge} ${e.big};
 			display: flex;
@@ -432,7 +432,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 				width: 100%;
 			}
 		`}
-`,En=({children:e,image:t,hasFullWidth:r,"data-testid":n="layout"})=>Ne(li,{"data-testid":n,children:[Z(ui,{image:t}),Z(ci,{hasFullWidth:r,children:e})]});En.displayName="Layout";const fi=be.div`
+`,En=({children:e,image:t,"data-testid":r="layout"})=>Ne(li,{"data-testid":r,children:[Z(ui,{image:t}),Z(ci,{children:e})]});En.displayName="Layout";const fi=be.div`
 	${({theme:{spaces:e},type:t,space:r="medium"})=>$`
 			width: ${t==="horizontal"&&e[r]};
 			height: ${t==="vertical"&&e[r]};
