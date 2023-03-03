@@ -259,9 +259,6 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 
 	${({theme:e,level:t})=>wa(e,`h${t}`)};
 `,dr=({level:e=1,children:t,align:r="center","data-testid":n="heading"})=>Z(Pa,{as:`h${e}`,level:e,align:r,"data-testid":n,children:t});dr.displayName="Heading";const Ta=({colors:e},t="avatar")=>({avatar:$`
-			cursor: pointer;
-			width: 120px;
-			height: 120px;
 			background: ${e.main};
 			border: 2px solid ${e.secondary};
 			border-radius: 100%;
@@ -423,8 +420,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 			}
 		`}
 `,ci=be.div`
-	${({theme:{spaces:e,breakpoints:t}})=>$`
-			width: 400px;
+	${({theme:{spaces:e,breakpoints:t},hasFullWidth:r})=>$`
+			width: ${r?"100%":"400px"};
 			margin: 0 auto;
 			padding: ${e.huge} ${e.big};
 			display: flex;
@@ -435,7 +432,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 				width: 100%;
 			}
 		`}
-`,En=({children:e,image:t,"data-testid":r="layout"})=>Ne(li,{"data-testid":r,children:[Z(ui,{image:t}),Z(ci,{children:e})]});En.displayName="Layout";const fi=be.div`
+`,En=({children:e,image:t,hasFullWidth:r,"data-testid":n="layout"})=>Ne(li,{"data-testid":n,children:[Z(ui,{image:t}),Z(ci,{hasFullWidth:r,children:e})]});En.displayName="Layout";const fi=be.div`
 	${({theme:{spaces:e},type:t,space:r="medium"})=>$`
 			width: ${t==="horizontal"&&e[r]};
 			height: ${t==="vertical"&&e[r]};
