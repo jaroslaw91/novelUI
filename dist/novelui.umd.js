@@ -265,6 +265,7 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 			background: ${e.main};
 			border: 2px solid ${e.secondary};
 			border-radius: 100%;
+			object-fit: cover;
 		`})[t],Sa=be.img`
 	${({onClick:e})=>$`
 			cursor: ${e&&"pointer"};

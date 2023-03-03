@@ -2424,6 +2424,7 @@ const Ga = ({ colors: e }, t = "avatar") => ({
 			background: ${e.main};
 			border: 2px solid ${e.secondary};
 			border-radius: 100%;
+			object-fit: cover;
 		`
 })[t], Ia = Te.img`
 	${({ onClick: e }) => te`
