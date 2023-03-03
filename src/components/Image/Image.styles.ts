@@ -15,6 +15,7 @@ const variantStyles = ({ colors }: DefaultTheme, variant = 'avatar') =>
 			background: ${colors.main};
 			border: 2px solid ${colors.secondary};
 			border-radius: 100%;
+			object-fit: cover;
 		`,
 	}[variant])
 
