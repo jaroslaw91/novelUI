@@ -9,9 +9,6 @@ interface ImageComponentProps {
 const variantStyles = ({ colors }: DefaultTheme, variant = 'avatar') =>
 	({
 		avatar: css`
-			cursor: pointer;
-			width: 120px;
-			height: 120px;
 			background: ${colors.main};
 			border: 2px solid ${colors.secondary};
 			border-radius: 100%;

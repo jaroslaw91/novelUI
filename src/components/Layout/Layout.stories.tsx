@@ -14,5 +14,6 @@ export const Default = Template.bind({})
 Default.args = {
 	children: 'I am Layout',
 	image,
+	hasFullWidth: false,
 	'data-testid': 'layout',
 }
