@@ -1,7 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import login from '../../assets/images/login.jpg'
-import lowLogin from '../../assets/images/lowLogin.jpg'
 import { Layout } from './Layout'
 
 export default {
@@ -13,70 +12,7 @@ const Template: ComponentStory<typeof Layout> = args => <Layout {...args}>{args?
 
 export const Default = Template.bind({})
 Default.args = {
-	children: (
-		<>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-			<div>fdsfsfsfsdfsdf</div>
-		</>
-	),
+	children: 'I am Layout!',
 	image: login,
-	lowImage: lowLogin,
 	'data-testid': 'layout',
 }
