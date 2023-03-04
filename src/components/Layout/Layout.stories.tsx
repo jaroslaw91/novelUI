@@ -1,6 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
-import image from '../../assets/images/login.jpg'
+import login from '../../assets/images/login.jpg'
+import lowLogin from '../../assets/images/lowLogin.jpg'
 import { Layout } from './Layout'
 
 export default {
@@ -75,6 +76,7 @@ Default.args = {
 			<div>fdsfsfsfsdfsdf</div>
 		</>
 	),
-	image,
+	image: login,
+	lowImage: lowLogin,
 	'data-testid': 'layout',
 }

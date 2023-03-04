@@ -21,6 +21,7 @@ export const LayoutComponent = styled.div<LayoutComponentProps>`
 			justify-content: center;
 			align-items: flex-start;
 			overflow-y: auto;
+			position: relative;
 
 			@media (max-width: ${breakpoints.mobile}px) {
 				width: 100%;
@@ -58,6 +59,7 @@ export const ChildrenComponent = styled.div`
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			z-index: 1;
 
 			@media (max-width: ${breakpoints.mobile}px) {
 				width: 100%;
