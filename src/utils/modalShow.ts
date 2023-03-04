@@ -1,21 +1,19 @@
-import NiceModal from '@ebay/nice-modal-react'
-import { ReactEventHandler, ReactNode } from 'react'
+import NiceModal, { NiceModalHocProps } from '@ebay/nice-modal-react'
+import { ReactNode } from 'react'
 
 import { Modal } from '../components/Modal'
 
 export type ModalShowProps = {
-	id: string
 	title: string
 	subtitle?: string
 	content: ReactNode
 	variant?: 'primary' | 'secondary' | 'alert'
-	action: ReactEventHandler<HTMLButtonElement>
+	action: () => void
 	actionName: string
 	cancelName: string
-}
+} & NiceModalHocProps
 
 export const modalShow = ({
-	id,
 	title,
 	subtitle = '',
 	content,
@@ -23,9 +21,9 @@ export const modalShow = ({
 	cancelName,
 	variant = 'primary',
 	action,
+	...modalProps
 }: ModalShowProps) =>
 	NiceModal.show(Modal, {
-		id,
 		title,
 		subtitle,
 		content,
@@ -33,4 +31,5 @@ export const modalShow = ({
 		cancelName,
 		variant,
 		action,
+		...modalProps,
 	})
