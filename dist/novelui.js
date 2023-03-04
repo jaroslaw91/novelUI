@@ -1578,7 +1578,7 @@ function jS(u) {
 function ob(u) {
   return u && typeof u.styledComponentId == "string";
 }
-var Kf = typeof process < "u" && (process.env.REACT_APP_SC_ATTR || process.env.SC_ATTR) || "data-styled", lb = typeof window < "u" && "HTMLElement" in window, kN = Boolean(typeof SC_DISABLE_SPEEDY == "boolean" ? SC_DISABLE_SPEEDY : typeof process < "u" && process.env.REACT_APP_SC_DISABLE_SPEEDY !== void 0 && process.env.REACT_APP_SC_DISABLE_SPEEDY !== "" ? process.env.REACT_APP_SC_DISABLE_SPEEDY !== "false" && process.env.REACT_APP_SC_DISABLE_SPEEDY : typeof process < "u" && process.env.SC_DISABLE_SPEEDY !== void 0 && process.env.SC_DISABLE_SPEEDY !== "" ? process.env.SC_DISABLE_SPEEDY !== "false" && process.env.SC_DISABLE_SPEEDY : process.env.NODE_ENV !== "production"), LN = {}, zN = process.env.NODE_ENV !== "production" ? { 1: `Cannot create styled-component for component: %s.
+var Kf = typeof process < "u" && process.env !== void 0 && (process.env.REACT_APP_SC_ATTR || process.env.SC_ATTR) || "data-styled", lb = typeof window < "u" && "HTMLElement" in window, kN = Boolean(typeof SC_DISABLE_SPEEDY == "boolean" ? SC_DISABLE_SPEEDY : typeof process < "u" && process.env !== void 0 && (process.env.REACT_APP_SC_DISABLE_SPEEDY !== void 0 && process.env.REACT_APP_SC_DISABLE_SPEEDY !== "" ? process.env.REACT_APP_SC_DISABLE_SPEEDY !== "false" && process.env.REACT_APP_SC_DISABLE_SPEEDY : process.env.SC_DISABLE_SPEEDY !== void 0 && process.env.SC_DISABLE_SPEEDY !== "" ? process.env.SC_DISABLE_SPEEDY !== "false" && process.env.SC_DISABLE_SPEEDY : process.env.NODE_ENV !== "production")), LN = {}, zN = process.env.NODE_ENV !== "production" ? { 1: `Cannot create styled-component for component: %s.
 
 `, 2: `Can't collect styles once you've consumed a \`ServerStyleSheet\`'s styles! \`ServerStyleSheet\` is a one off instance for each server-side render cycle.
 
@@ -1678,7 +1678,7 @@ var MN = function() {
   return jy.get(u);
 }, VN = function(u, d) {
   d >= bv && (bv = d + 1), Py.set(u, d), jy.set(d, u);
-}, UN = "style[" + Kf + '][data-styled-version="5.3.6"]', XN = new RegExp("^" + Kf + '\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'), qN = function(u, d, f) {
+}, UN = "style[" + Kf + '][data-styled-version="5.3.8"]', XN = new RegExp("^" + Kf + '\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'), qN = function(u, d, f) {
   for (var m, b = f.split(","), T = 0, h = b.length; T < h; T++)
     (m = b[T]) && u.registerName(d, m);
 }, HN = function(u, d) {
@@ -1704,7 +1704,7 @@ var MN = function() {
         return k;
     }
   }(f), T = b !== void 0 ? b.nextSibling : null;
-  m.setAttribute(Kf, "active"), m.setAttribute("data-styled-version", "5.3.6");
+  m.setAttribute(Kf, "active"), m.setAttribute("data-styled-version", "5.3.8");
   var h = jN();
   return h && m.setAttribute("nonce", h), f.insertBefore(m, T), m;
 }, BN = function() {
@@ -1842,7 +1842,7 @@ function WA(u) {
   }
   return !0;
 }
-var IN = BA("5.3.6"), KN = function() {
+var IN = BA("5.3.8"), KN = function() {
   function u(d, f, m) {
     this.rules = d, this.staticRulesId = "", this.isStatic = process.env.NODE_ENV === "production" && (m === void 0 || m.isStatic) && WA(d), this.componentId = f, this.baseHash = Zs(IN, f), this.baseStyle = m, By.registerId(f);
   }
@@ -2072,7 +2072,7 @@ function $A(u, d, f) {
   var m = ob(u), b = !Ny(u), T = d.attrs, h = T === void 0 ? Hy : T, C = d.componentId, R = C === void 0 ? function(J, re) {
     var _ = typeof J != "string" ? "sc" : NS(J);
     DS[_] = (DS[_] || 0) + 1;
-    var V = _ + "-" + QA("5.3.6" + _ + DS[_]);
+    var V = _ + "-" + QA("5.3.8" + _ + DS[_]);
     return re ? re + "-" + V : V;
   }(d.displayName, d.parentComponentId) : C, x = d.displayName, k = x === void 0 ? function(J) {
     return Ny(J) ? "styled." + J : "Styled(" + jS(J) + ")";
@@ -25376,23 +25376,23 @@ const RL = Jn.div`
     );
   }
 ), qL = ({
-  id: u,
-  title: d,
-  subtitle: f = "",
-  content: m,
-  actionName: b,
-  cancelName: T,
-  variant: h = "primary",
-  action: C
+  title: u,
+  subtitle: d = "",
+  content: f,
+  actionName: m,
+  cancelName: b,
+  variant: T = "primary",
+  action: h,
+  ...C
 }) => fb.show(LL, {
-  id: u,
-  title: d,
-  subtitle: f,
-  content: m,
-  actionName: b,
-  cancelName: T,
-  variant: h,
-  action: C
+  title: u,
+  subtitle: d,
+  content: f,
+  actionName: m,
+  cancelName: b,
+  variant: T,
+  action: h,
+  ...C
 }), HL = (u, d) => Nn[d](u, {
   position: window.innerWidth <= JS.MOBILE ? "top-center" : "bottom-left",
   autoClose: 3e3,
