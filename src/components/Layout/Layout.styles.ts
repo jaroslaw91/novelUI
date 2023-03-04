@@ -59,7 +59,6 @@ export const ChildrenComponent = styled.div`
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			z-index: 1;
 
 			@media (max-width: ${breakpoints.mobile}px) {
 				width: 100%;
