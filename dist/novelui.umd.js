@@ -386,8 +386,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 			}
 		`}
 `,On=({value:e=""})=>{const{t}=wn(),[r,n]=v.useState(0),o={20:"word.very.weak",40:"word.weak",60:"word.medium",80:"word.good",100:"word.very.good"},i={20:"error",40:"weak",60:"warning",80:"good",100:"success"};return v.useEffect(()=>{const a={length:0,hasUpperCase:!1,hasLowerCase:!1,hasDigit:!1,hasSpecialChar:!1};a.length=e.length>=8,a.hasUpperCase=/[A-Z]+/.test(e),a.hasLowerCase=/[a-z]+/.test(e),a.hasDigit=/[0-9]+/.test(e),a.hasSpecialChar=/[^A-Za-z0-9]+/.test(e);const s=Object.values(a).filter(l=>l);n(s.length/5*100)},[e]),Ne(si,{strength:r,color:i[r],children:[Ne("div",{className:"strength",children:[Z("div",{className:"very-weak"}),Z("div",{className:"weak"}),Z("div",{className:"medium"}),Z("div",{className:"good"}),Z("div",{className:"very-good"})]}),!!o[r]&&Ne(it,{size:"small","data-testid":"input-error",children:[t(o[r]),Z(_a,{})]})]})};On.displayName="PasswordMeter";const Xn=({type:e="text",label:t,name:r,placeholder:n="",id:o,value:i="",touched:a={},errors:s={},onChange:l,onBlur:c,autoFocus:f=!1,hasFullWidth:d=!1,hasPasswordMeter:b=!1,isDropdown:y=!1,hideError:m=!1,onClick:g,"data-testid":p="input"})=>{const{t:w}=wn(),[P,E]=v.useState(!1),S=s[r]&&a[r],h=e==="password";return Ne("div",{children:[t&&Z(ni,{htmlFor:o,hasFullWidth:d,children:Z(it,{type:"label","data-testid":"input-label",children:t})}),Ne(oi,{children:[Z(ai,{id:o,name:r,type:P?"text":e,value:i,placeholder:n,onChange:l,onBlur:c,hasFullWidth:d,autoFocus:f,isError:S,isPassword:h,"data-testid":p,isDropdown:y,onClick:g}),h&&Z(ii,{onClick:()=>E(!P),"data-testid":"input-password",children:P?Z(Ka,{}):Z(Qa,{})}),h&&!S&&b&&Z(On,{value:i})]}),!m&&Z(it,{type:"error",size:"small",align:"left","data-testid":"input-error",children:S?w(`${s[r]}`):null})]})};Xn.displayName="Input";const li=be.div`
-	${({theme:{breakpoints:e}})=>$`
+	${({theme:{breakpoints:e},image:t})=>$`
 			width: 100%;
+			min-height: calc(100vh - 84px);
+			background-image: url(${t});
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
@@ -395,44 +400,40 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
 			@media (max-width: ${e.mobile}px) {
 				width: 100%;
+				background-image: none;
 				height: calc(100vh - 112px);
 			}
 		`}
 `,ui=be.div`
-	${({theme:{spaces:e,colors:t,breakpoints:r},image:n})=>$`
+	${({theme:{spaces:e,breakpoints:t},image:r})=>$`
 			width: calc(100% - 600px);
-			height: calc(100vh - 84px);
 			padding: calc(${e.huge} + ${e.huge}) ${e.huge};
-			background: ${t.main};
-			background-image: url(${n});
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			opacity: 0.5;
-			display: ${!n&&"none"};
+			display: ${!r&&"none"};
 
-			@media (max-width: ${r.mobile}px) {
+			@media (max-width: ${t.mobile}px) {
 				display: none;
 			}
 
-			@media (max-width: ${r.tablet}px) {
+			@media (max-width: ${t.tablet}px) {
 				display: none;
 			}
 		`}
 `,ci=be.div`
-	${({theme:{spaces:e,breakpoints:t}})=>$`
+	${({theme:{spaces:e,colors:t,breakpoints:r}})=>$`
 			width: 400px;
+			min-height: calc(100vh - 84px);
 			margin: 0 auto;
 			padding: ${e.huge} ${e.big};
+			background: ${t.main};
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 
-			@media (max-width: ${t.mobile}px) {
+			@media (max-width: ${r.mobile}px) {
 				width: 100%;
 			}
 		`}
-`,En=({children:e,image:t,"data-testid":r="layout"})=>Ne(li,{"data-testid":r,children:[Z(ui,{image:t}),Z(ci,{children:e})]});En.displayName="Layout";const fi=be.div`
+`,En=({children:e,image:t,"data-testid":r="layout"})=>Ne(li,{image:t,"data-testid":r,children:[Z(ui,{image:t}),Z(ci,{children:e})]});En.displayName="Layout";const fi=be.div`
 	${({theme:{spaces:e},type:t,space:r="medium"})=>$`
 			width: ${t==="horizontal"&&e[r]};
 			height: ${t==="vertical"&&e[r]};
@@ -1204,6 +1205,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 			display: grid;
 			place-items: center;
 			background-color: ${r.secondary_opacity};
+			overflow: none;
 
 			@media (max-width: ${e.mobile}px) {
 				padding: 0 ${t.medium};
@@ -1212,17 +1214,18 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 		`}
 `,Os=be.div`
 	${({theme:{breakpoints:e,colors:t,spaces:r}})=>$`
-			padding: ${r.medium};
+			padding: ${r.big};
 			width: 700px;
 			border-radius: 10px;
 			background-color: ${t.main};
+			position: relative;
 
 			@media (max-width: ${e.mobile}px) {
 				width: 100%;
 			}
 		`}
 `,Xs=be.div`
-	${({theme:{colors:e}})=>$`
+	${({theme:{colors:e,spaces:t}})=>$`
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
@@ -1232,6 +1235,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 				cursor: pointer;
 				width: 30px;
 				height: 30px;
+				top: ${t.medium};
+				right: ${t.medium};
+				position: absolute;
 
 				&:hover {
 					color: ${e.color5};

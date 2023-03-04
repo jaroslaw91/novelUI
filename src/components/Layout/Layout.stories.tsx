@@ -12,7 +12,69 @@ const Template: ComponentStory<typeof Layout> = args => <Layout {...args}>{args?
 
 export const Default = Template.bind({})
 Default.args = {
-	children: 'I am Layout',
+	children: (
+		<>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+			<div>fdsfsfsfsdfsdf</div>
+		</>
+	),
 	image,
 	'data-testid': 'layout',
 }

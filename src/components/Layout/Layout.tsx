@@ -13,7 +13,10 @@ export const Layout: FC<LayoutProps> = ({
 	image,
 	'data-testid': dataTestId = 'layout',
 }) => (
-	<LayoutComponent data-testid={dataTestId}>
+	<LayoutComponent
+		image={image}
+		data-testid={dataTestId}
+	>
 		<PresentionalComponent image={image} />
 
 		<ChildrenComponent>{children}</ChildrenComponent>

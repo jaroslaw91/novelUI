@@ -3082,8 +3082,13 @@ const Wi = ({
 };
 Wi.displayName = "Input";
 const Vi = Te.div`
-	${({ theme: { breakpoints: e } }) => te`
+	${({ theme: { breakpoints: e }, image: t }) => te`
 			width: 100%;
+			min-height: calc(100vh - 84px);
+			background-image: url(${t});
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
@@ -3091,40 +3096,36 @@ const Vi = Te.div`
 
 			@media (max-width: ${e.mobile}px) {
 				width: 100%;
+				background-image: none;
 				height: calc(100vh - 112px);
 			}
 		`}
 `, Ci = Te.div`
-	${({ theme: { spaces: e, colors: t, breakpoints: r }, image: n }) => te`
+	${({ theme: { spaces: e, breakpoints: t }, image: r }) => te`
 			width: calc(100% - 600px);
-			height: calc(100vh - 84px);
 			padding: calc(${e.huge} + ${e.huge}) ${e.huge};
-			background: ${t.main};
-			background-image: url(${n});
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			opacity: 0.5;
-			display: ${!n && "none"};
+			display: ${!r && "none"};
 
-			@media (max-width: ${r.mobile}px) {
+			@media (max-width: ${t.mobile}px) {
 				display: none;
 			}
 
-			@media (max-width: ${r.tablet}px) {
+			@media (max-width: ${t.tablet}px) {
 				display: none;
 			}
 		`}
 `, Fi = Te.div`
-	${({ theme: { spaces: e, breakpoints: t } }) => te`
+	${({ theme: { spaces: e, colors: t, breakpoints: r } }) => te`
 			width: 400px;
+			min-height: calc(100vh - 84px);
 			margin: 0 auto;
 			padding: ${e.huge} ${e.big};
+			background: ${t.main};
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 
-			@media (max-width: ${t.mobile}px) {
+			@media (max-width: ${r.mobile}px) {
 				width: 100%;
 			}
 		`}
@@ -3132,10 +3133,17 @@ const Vi = Te.div`
   children: e,
   image: t,
   "data-testid": r = "layout"
-}) => /* @__PURE__ */ ze(Vi, { "data-testid": r, children: [
-  /* @__PURE__ */ U(Ci, { image: t }),
-  /* @__PURE__ */ U(Fi, { children: e })
-] });
+}) => /* @__PURE__ */ ze(
+  Vi,
+  {
+    image: t,
+    "data-testid": r,
+    children: [
+      /* @__PURE__ */ U(Ci, { image: t }),
+      /* @__PURE__ */ U(Fi, { children: e })
+    ]
+  }
+);
 ki.displayName = "Layout";
 const Mi = Te.div`
 	${({ theme: { spaces: e }, type: t, space: r = "medium" }) => te`
@@ -5673,6 +5681,7 @@ const Is = Te.div`
 			display: grid;
 			place-items: center;
 			background-color: ${r.secondary_opacity};
+			overflow: none;
 
 			@media (max-width: ${e.mobile}px) {
 				padding: 0 ${t.medium};
@@ -5681,17 +5690,18 @@ const Is = Te.div`
 		`}
 `, Ks = Te.div`
 	${({ theme: { breakpoints: e, colors: t, spaces: r } }) => te`
-			padding: ${r.medium};
+			padding: ${r.big};
 			width: 700px;
 			border-radius: 10px;
 			background-color: ${t.main};
+			position: relative;
 
 			@media (max-width: ${e.mobile}px) {
 				width: 100%;
 			}
 		`}
 `, Qs = Te.div`
-	${({ theme: { colors: e } }) => te`
+	${({ theme: { colors: e, spaces: t } }) => te`
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
@@ -5701,6 +5711,9 @@ const Is = Te.div`
 				cursor: pointer;
 				width: 30px;
 				height: 30px;
+				top: ${t.medium};
+				right: ${t.medium};
+				position: absolute;
 
 				&:hover {
 					color: ${e.color5};
