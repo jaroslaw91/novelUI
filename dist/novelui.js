@@ -2307,6 +2307,13 @@ const hD = ({ colors: u }, d = "primary") => ({
 				background: ${u.secondary};
 				color: ${u.main};
 			}
+
+			&:disabled,
+			&[disabled] {
+				background: ${u.color5};
+				color: ${u.main};
+				cursor: not-allowed;
+			}
 		`,
   alert: Mt`
 			color: ${u.secondary};
@@ -2314,6 +2321,13 @@ const hD = ({ colors: u }, d = "primary") => ({
 
 			&:hover {
 				background: ${u.color5};
+			}
+
+			&:disabled,
+			&[disabled] {
+				background: ${u.color5};
+				color: ${u.main};
+				cursor: not-allowed;
 			}
 		`
 })[d], mD = (u = "center") => ({
@@ -25237,13 +25251,12 @@ const RL = Jn.div`
 	${({ theme: { breakpoints: u, spaces: d, colors: f } }) => Mt`
 			width: 100vw;
 			height: 100vh;
-			position: absolute;
+			position: fixed;
 			left: 0;
 			top: 0;
 			display: grid;
 			place-items: center;
 			background-color: ${f.secondary_opacity};
-			overflow: none;
 
 			@media (max-width: ${u.mobile}px) {
 				padding: 0 ${d.medium};
@@ -25332,7 +25345,7 @@ const RL = Jn.div`
                     space: "tiny"
                   }
                 ),
-                /* @__PURE__ */ At(Cv, { children: f })
+                /* @__PURE__ */ At(Cv, { type: "label", children: f })
               ] })
             ] }),
             /* @__PURE__ */ At(

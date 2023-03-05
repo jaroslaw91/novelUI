@@ -203,12 +203,26 @@ See https://s-c.sh/2BAXzed for more info.`),window["__styled-components-init__"]
 				background: ${u.secondary};
 				color: ${u.main};
 			}
+
+			&:disabled,
+			&[disabled] {
+				background: ${u.color5};
+				color: ${u.main};
+				cursor: not-allowed;
+			}
 		`,alert:Pt`
 			color: ${u.secondary};
 			background: ${u.error};
 
 			&:hover {
 				background: ${u.color5};
+			}
+
+			&:disabled,
+			&[disabled] {
+				background: ${u.color5};
+				color: ${u.main};
+				cursor: not-allowed;
 			}
 		`})[d],wx=(u="center")=>({center:Pt`
 			justify-content: center;
@@ -1369,13 +1383,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 	${({theme:{breakpoints:u,spaces:d,colors:f}})=>Pt`
 			width: 100vw;
 			height: 100vh;
-			position: absolute;
+			position: fixed;
 			left: 0;
 			top: 0;
 			display: grid;
 			place-items: center;
 			background-color: ${f.secondary_opacity};
-			overflow: none;
 
 			@media (max-width: ${u.mobile}px) {
 				padding: 0 ${d.medium};
@@ -1427,4 +1440,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 				flex-wrap: wrap;
 			}
 		`}
-`,FO=vg.create(({id:u,title:d,subtitle:f="",content:m,variant:b="primary",action:T,actionName:h,cancelName:C,"data-testid":R="modal"})=>{const x=pg(),D=()=>x.remove();return Et(LO,{id:u,"data-testid":R,children:na(zO,{children:[na(PO,{children:[na("div",{children:[Et(lg,{level:3,align:"left",children:d}),f&&na(ub,{children:[Et(td,{type:"vertical",space:"tiny"}),Et(Ks,{children:f})]})]}),Et(tR,{onClick:D,className:"close-icon"})]}),Et(td,{type:"vertical"}),Et("div",{children:m}),Et(td,{type:"vertical",space:"large"}),na(MO,{children:[Et(kv,{variant:"secondary",action:D,children:C}),Et(kv,{variant:b,action:()=>{T(),D()},children:h})]})]})})}),VO=({title:u,subtitle:d="",content:f,actionName:m,cancelName:b,variant:T="primary",action:h,...C})=>vg.show(FO,{title:u,subtitle:d,content:f,actionName:m,cancelName:b,variant:T,action:h,...C}),UO=(u,d)=>Cn[d](u,{position:window.innerWidth<=Sg.MOBILE?"top-center":"bottom-left",autoClose:3e3,hideProgressBar:!1,closeOnClick:!0,pauseOnHover:!0,closeButton:!1,draggable:!0,progress:void 0});lr.Break=yx,lr.Button=kv,lr.Heading=lg,lr.Image=Xb,lr.Input=Qb,lr.Layout=_b,lr.Loader=og,lr.Paragraph=Ks,lr.Spacer=td,lr.Theme=KR,lr.Tooltip=DO,lr.modalShow=VO,lr.toastNotify=UO,Object.defineProperty(lr,Symbol.toStringTag,{value:"Module"})});
+`,FO=vg.create(({id:u,title:d,subtitle:f="",content:m,variant:b="primary",action:T,actionName:h,cancelName:C,"data-testid":R="modal"})=>{const x=pg(),D=()=>x.remove();return Et(LO,{id:u,"data-testid":R,children:na(zO,{children:[na(PO,{children:[na("div",{children:[Et(lg,{level:3,align:"left",children:d}),f&&na(ub,{children:[Et(td,{type:"vertical",space:"tiny"}),Et(Ks,{type:"label",children:f})]})]}),Et(tR,{onClick:D,className:"close-icon"})]}),Et(td,{type:"vertical"}),Et("div",{children:m}),Et(td,{type:"vertical",space:"large"}),na(MO,{children:[Et(kv,{variant:"secondary",action:D,children:C}),Et(kv,{variant:b,action:()=>{T(),D()},children:h})]})]})})}),VO=({title:u,subtitle:d="",content:f,actionName:m,cancelName:b,variant:T="primary",action:h,...C})=>vg.show(FO,{title:u,subtitle:d,content:f,actionName:m,cancelName:b,variant:T,action:h,...C}),UO=(u,d)=>Cn[d](u,{position:window.innerWidth<=Sg.MOBILE?"top-center":"bottom-left",autoClose:3e3,hideProgressBar:!1,closeOnClick:!0,pauseOnHover:!0,closeButton:!1,draggable:!0,progress:void 0});lr.Break=yx,lr.Button=kv,lr.Heading=lg,lr.Image=Xb,lr.Input=Qb,lr.Layout=_b,lr.Loader=og,lr.Paragraph=Ks,lr.Spacer=td,lr.Theme=KR,lr.Tooltip=DO,lr.modalShow=VO,lr.toastNotify=UO,Object.defineProperty(lr,Symbol.toStringTag,{value:"Module"})});
