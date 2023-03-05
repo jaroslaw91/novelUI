@@ -68,7 +68,7 @@ export const Modal: FC<ModalProps & NiceModalHocProps> = NiceModal.create(
 										space="tiny"
 									/>
 
-									<Paragraph>{subtitle}</Paragraph>
+									<Paragraph type="label">{subtitle}</Paragraph>
 								</>
 							)}
 						</div>

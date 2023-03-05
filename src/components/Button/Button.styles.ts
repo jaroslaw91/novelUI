@@ -34,6 +34,13 @@ const variantStyles = ({ colors }: DefaultTheme, variant = 'primary') =>
 				background: ${colors.secondary};
 				color: ${colors.main};
 			}
+
+			&:disabled,
+			&[disabled] {
+				background: ${colors.color5};
+				color: ${colors.main};
+				cursor: not-allowed;
+			}
 		`,
 		alert: css`
 			color: ${colors.secondary};
@@ -41,6 +48,13 @@ const variantStyles = ({ colors }: DefaultTheme, variant = 'primary') =>
 
 			&:hover {
 				background: ${colors.color5};
+			}
+
+			&:disabled,
+			&[disabled] {
+				background: ${colors.color5};
+				color: ${colors.main};
+				cursor: not-allowed;
 			}
 		`,
 	}[variant])

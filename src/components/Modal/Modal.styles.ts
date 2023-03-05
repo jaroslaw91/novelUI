@@ -5,13 +5,12 @@ export const ModalContainerComponent = styled.div`
 		css`
 			width: 100vw;
 			height: 100vh;
-			position: absolute;
+			position: fixed;
 			left: 0;
 			top: 0;
 			display: grid;
 			place-items: center;
 			background-color: ${colors.secondary_opacity};
-			overflow: none;
 
 			@media (max-width: ${breakpoints.mobile}px) {
 				padding: 0 ${spaces.medium};
